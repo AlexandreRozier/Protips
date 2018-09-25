@@ -1,7 +1,9 @@
 # Languages cheatsheet
 
-With this little helper, be always wary of the respective use-cases of the main programming languages.
-*Warning: this is neither consistent nor professional, make your own opinion!*
+With this little helper, be always wary of the respective use-cases of the main programming languages.  
+
+***Warning**: this is not an objective work, it represents my thoughts about each language according to how they were introduced to me.  
+ Make your own opinion!*
 
 ## WebAssembly
 
@@ -30,9 +32,26 @@ source: https://tomassetti.me/introduction-to-webassembly/
  
  ## Java
  
- **What's that?** Compiled object oriented language
+ **What's that?** One of the most famous object-oriented language out there.
 
 **How does it work?** Write .java files, compile them to .class files thanks to the javac compiler, and run those things on the Java Virtual Machine.
 
 **What is it good for?** Cross plaftorm desktop applications, sometimes web (play framework) and server (glassfish). Since the JVM takes the hurdle of running your code on every supported platform, cross-platform comes easy.
 *A lot of people hate on java for being slow. That is true compared to C or other languages, since the JVM has to transform java bytecode on the fly*
+
+
+## Go
+
+**What's that?** Developed by Google, compiled, performs well parrallel computations & networking. Close to C. Compiles fast.
+
+**How does it work?** Write your .go file, compile it to bytecode thanks to the [Go Toolchain](https://golang.org/doc/install).
+
+**What's particular with it?**
+  - Concise variable declaration:  `i:=2` equivalent to `var i int = 2`  
+  -> basically trough type inference the compiler knows i is an integer
+
+  - Efficient thread-like routines 
+  - Toolchain produces statically linked binaries. That is, you don't need any additionnal dependency to execute your binary!
+
+  **What is it good for?** High performance REST APIs, close to C performance but easier to use. Basically for back-end purposes, or to balance another language's weaknesses.  
+  *Ex:* Machine learning in python, but HTML requests handled by a Go module.
