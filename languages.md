@@ -55,3 +55,28 @@ source: https://tomassetti.me/introduction-to-webassembly/
 
   **What is it good for?** High performance REST APIs, close to C performance but easier to use. Basically for back-end purposes, or to balance another language's weaknesses.  
   *Ex:* Machine learning in python, but HTML requests handled by a Go module.
+
+## C
+
+**What's that?**   
+  - Compiled  
+  - Imperative (you describe what happens in the program),
+  - Procedural (it calls procedures - aka functions - and handles their results) 
+
+**How does it work?** 
+
+ Write your .c files, compile it to bytecode thanks to any C compiler ([gcc](https://gcc.gnu.org/) for instance).  
+In my opinion, the build process is pretty painful, and involves:
+  - **A Makefile**: this explains to the compiler how your program should be compiled, according to which architecture, etc.
+  - **CMake**: tool aiming to reduce the pain of generating a correct Makefile (useful if you want to support many architectures, or need compilation flags per platform,..)
+
+**What's particular with it?**
+
+Due to its low-level nature,developers have to **take care of the memory by themselves** - that is, allocate memory space for the different variables, etc.  
+> This allows fast and memory-efficient programs, at the cost of developer time
+
+**What is it good for? ** High performance low-level programs, for example:
+  - integrated systems
+  - linux kernel
+  - video/audio codecs
+  
