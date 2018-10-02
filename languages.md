@@ -75,7 +75,7 @@ In my opinion, the build process is pretty painful, and involves:
 Due to its low-level nature,developers have to **take care of the memory by themselves** - that is, allocate memory space for the different variables, etc.  
 > This allows fast and memory-efficient programs, at the cost of developer time
 
-**What is it good for? ** High performance low-level programs, for example:
+**What is it good for?** High performance low-level programs, for example:
   - integrated systems
   - linux kernel
   - video/audio codecs
